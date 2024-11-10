@@ -11,6 +11,7 @@ console.log(quantity);
 // chyslo 5 = 5
 
 console.log(typeof quantity);
+console.log(typeof potions);
 
 // typeof=string;
 

@@ -3,7 +3,7 @@ function makePizza(result) {
   return "Your pizza is being prepared, please wait."
 }
     // Change code below this line
-    const result = "Your pizza is being prepared, please wait.";
+    const result = makePizza("Your pizza is being prepared, please wait.");
     const pointer = makePizza;
 
 makePizza("Your pizza is being prepared, please wait.")

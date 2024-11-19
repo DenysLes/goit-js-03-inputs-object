@@ -34,23 +34,23 @@ const atTheOldToad = {
 
   updatePotionName(oldName, newName) {
     for (let i = 0; i < this.potions.length; i += 1) {
+
       const name = this.potions[i].name;
-     let idx = this.potions.indexOf(name);
-  console.log(idx)
-      if (name === oldName) {
+      console.log(name)
+      console.log(name === oldName)
+        if(name === oldName) {
         this.potions.splice(oldName, 1, newName);
-        return
+    return ;
       }
     }
-      
-  return `Potion ${newName} is not in inventory!`;
+  // return `Potion ${newName} is not in inventory!`;
     },
   // Change code above this line
 };
-console.log(atTheOldToad.getPotions());
-console.log(atTheOldToad.addPotion({ name: "Invisibility", price: 620 }));
-console.log(atTheOldToad.addPotion({ name: "Power potion", price: 270 }));
-console.log(atTheOldToad.getPotions());
+// console.log(atTheOldToad.getPotions());
+// console.log(atTheOldToad.addPotion({ name: "Invisibility", price: 620 }));
+// console.log(atTheOldToad.addPotion({ name: "Power potion", price: 270 }));
+// console.log(atTheOldToad.getPotions());
   // atTheOldToad.addPotion({ name: "Dragon breath", price: 700 }),
   // atTheOldToad.addPotion({ name: "Stone skin", price: 240 }),
   // atTheOldToad.addPotion({ name: "Dragon breath", price: 700 }),

@@ -67,39 +67,59 @@
 
 // "task 2"
 
-class StringBuilder{
-constructor(initialValue)  {
-  this.value = initialValue;
-}
-  getValue(){
-    return this.value
-  }
-  padStart(str) {
-    if (str !== this.value) {
-      return this.value = `${"^"}${this.value}`;
-    }
-  }
-  padEnd(str) {
-    if (str !== this.value) {
-      return this.value = `${this.value}${"^"}`;
-    }
-  }
-    padBoth(str) {
-for (let items of this.value) {
-  console.log(items);
-  if (items !== this.value) {
-    return this.value = `${"="}${this.value}${"="}`;
-    }
-    }
-  }
-}
+// class StringBuilder{
+// constructor(value)  {
+//   this.value = value
+// }
+//   getValue(){
+//  return this.value
+//   }
+//   padStart(str) {
+//      this.value =`${str}${this.value}`;
+//   }
+//   padEnd(str) {
+//    this.value = `${this.value}${str}`;
+//   }
+//     padBoth(str) {
 
-// Change code above this line
-const builder = new StringBuilder(".");
-console.log(builder.getValue()); // "."
-builder.padStart("^");
-console.log(builder.getValue()); // "^."
-builder.padEnd("^");
-console.log(builder.getValue()); // "^.^"
-builder.padBoth("=");
-console.log(builder.getValue()); // "=^.^="
+//  this.value = `${str}${this.value}${str}`;
+    
+//   }
+// }
+
+// const builder = new StringBuilder(".");
+// console.log(builder.getValue()); // "."
+// builder.padStart("^");
+// console.log(builder.getValue()); // "^."
+// builder.padEnd("^");
+// console.log(builder.getValue()); // "^.^"
+// builder.padBoth("=");
+// console.log(builder.getValue()); // "=^.^="
+
+// ======================================
+
+// class Car {
+//   static #MAX_PRICE = 50000;
+//   // Change code below this line
+// static checkPrice (price) {
+//   if(price > this.#MAX_PRICE) {
+//   return "Error! Price exceeds the maximum"
+//   }
+//   return "Success! Price is within "
+// }
+//   // Change code above this line
+//   constructor({ price }) {
+//     this.price = price;
+//     Car.checkPrice(price)
+//   }
+// }
+
+// const audi = new Car({ price: 36000 });
+// const bmw = new Car({ price: 64000 });
+
+// console.log(Car.checkPrice(audi.price)); // "Success! Price is within acceptable limits"
+// console.log(Car.checkPrice(bmw.price)); // "Error! Price exceeds the maximum"
+
+
+// ===================++++++++================
+
